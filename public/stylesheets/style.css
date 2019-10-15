@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.grid {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-gap: 15px 10px;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 50px);
+  justify-content: start; 
+    align-content: start; 
+}
+
+.child {
+  background:gray
+}
+
+.container {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  grid-template-areas:
+                "a a a"
+                "b c c"
+                "b d d"
+}
+
+.item-a {
+  grid-area: a;
+  background: red;
+}
+
+.item-b {
+  grid-area: b;
+  background: yellow;
+}
+
+.item-c {
+  grid-area: c;
+  background: blue;
+}
+
+.item-d {
+  grid-area: d;
+  background: green;
+}
